@@ -1,0 +1,25 @@
+---
+title: "covid_cleaned"
+format: html
+---
+#load data 
+```{r}
+library(tidyverse)
+library(dplyr)
+
+covid <- read_csv("Provisional_COVID-19_Deaths_by_Sex_and_Age_20260407.csv") 
+```
+
+#clean data 
+```{r}
+library(janitor)
+
+covid <- clean_names(covid)
+
+covid <- filter(state == "United States")
+```
+
+```{r}
+write.csv(covid, "covid.csv", row.names = FALSE)
+```
+
