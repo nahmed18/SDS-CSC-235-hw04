@@ -8,17 +8,50 @@
 
 </head>
 <body>
-    <h1>Uncertainty & Mortality Rates in Respiratory Diseases</h1>
+    <h1>Uncertainty & Mortality in Covid-19 & Other Diseases</h1>
 
     <div id="intro">
-        
+        <h2>Data Overview</h2>   
+        <p>The data used for this visual analytic system comes from the official <a href="https://data.cdc.gov/National-Center-for-Health-Statistics/Provisional-COVID-19-Deaths-by-Sex-and-Age/9bhg-hcku/about_data">CDC</a>. The data set used is the "Provisional COVID-19 Deaths by Sex and Age" 
+            which holds data from the start of 2020 and was last updated in September 2023. Since the dataset is extremely large the data used for the
+            visualizations has been filtered to data representing the whole United States rather than individual states. </p>
     </div>
 
-    <div id="line-chart" ></div>
+
+    
+    <div class ="container">
+        <div id="line-chart" ></div>
+        <div id="buttons">
+            <h2>Filter By Sex:<br></h2>
+            <input type="radio" name="gender" value="Male"> Male Only<br>
+            <input type="radio" name="gender" value="Female"> Female Only<br>
+            <input type="radio" name="gender" value="All Sexes"> All (Default)<br>
+        </div> 
+    </div>
+    <p class="descrip">In this plot, the line represents the average deaths due to Covid-19 from 2020 to 2023 across all age groups and sexes.
+        The shaded area shows the uncertainty (how much the data accuracy may differ) between the age groups. The plot can be filtered to show only male or female data.</p>
 
 
 
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+
+    <div class="container">
+        <div id="bar-chart"></div>
+        <div id="click">
+            <h3> Click a Bar to Learn More! </h3>
+            <div id="click-info">
+                <p><span id="disease"></span></p>
+                <p><span id="mean"></span></p>
+                <p><span id="sd"></span></p>
+                <p><span id="se"></span></p>
+                <p><span id="upper"></span></p>
+                <p><span id="lower"></span></p>
+            </div>
+        </div>
+    </div>
+    
+    <p class="descrip">In this plot, the bars represent the average deaths from the diseases across all ages and sexes from 2020 to 2023.
+        The error bars show the uncertainty of the mean and where the true data may lie.</p>
+
 
     
 <script src="index.js"></script>

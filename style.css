@@ -1,0 +1,50 @@
+h1 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container{
+    display: flex;
+    margin-left: 90px;
+} 
+
+#buttons{
+    margin-top: 80px;
+} 
+
+h3 {
+    padding-top: 90px
+}
+
+#bar-chart {
+    padding-top: 50px;
+} 
+
+#intro {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 200px;
+    margin-right: 200px; 
+    font-size: 18px;
+    background-color: rgb(234, 205, 251);
+    padding-top: 8px; 
+    padding-bottom: 8px; 
+    padding-left: 30px; 
+    padding-right: 30px; 
+    border-radius: 15px;
+} 
+
+p {
+    padding-left: 25px; 
+    padding-right: 25px; 
+}
+
+h2 {
+    text-align: center;
+}
+
+.descrip {
+    margin-left: 240px; 
+    margin-right: 240px; 
+    font-size: 17px;
+}

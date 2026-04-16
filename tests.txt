@@ -1,0 +1,15 @@
+1. Two Analysis Tasks: 
+    - How do covid deaths change when filtered by sex/is the mean a good representation? 
+    - How do deaths compare between diseases, what conclusions can be inferred?  
+
+2. Notes from friend: 
+    - They found the system intuitive and straightforward, they were ablt to sucessfully
+      toggle the filters on and click to get more infomration. 
+    - They liked that the shading for the uncertainty was so visible on the plot and were shocked by how large 
+      it was. 
+    - They felt that the system is good but they want a little more infomration to understand the uncertainty/they weren't exactly sure 
+      what it meant.  
+
+3. Adjustment: 
+    - After recieving my friends feedback I decided to add more context beyond where the data was coming from so they could understand the 
+      uncertainty better for people that may not come from a STEM background.  
